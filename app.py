@@ -155,14 +155,14 @@ def main():
     </p>
                 
     <p style="text-align:center;">
-        <a href="https://github.com/antoniomedina99/Tesis_Yopal_PEA_Statsmodels/blob/main/notebooks/Reporte.ipynb" target="_blank">Repositorio de GitHub</a>
+        <a href="https://github.com/antoniomedina99/Tesis_Yopal_PEA_Statsmodels/blob/main/notebooks/Reporte.ipynb" target="_blank">Clink para ingresar al Repositorio de GitHub</a>
     </p>
     """, unsafe_allow_html=True)
 
 
     # Nota sobre el valor de la estimación 
     st.markdown("""
-    *Nota: Los datos del estudio son estaticos y fueron recolectados en el año 2021, por lo tanto, la fidelidad de la estimación a medida que pasa el tiempo se hace menos exacta.*
+    ***Nota**: Los datos del estudio son estaticos y fueron recolectados en el año 2021, por lo tanto, la fidelidad de la estimación a medida que pasa el tiempo se hace menos exacta.*
     """, unsafe_allow_html=True)
 
     
