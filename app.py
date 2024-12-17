@@ -34,6 +34,13 @@ def main():
     <h1 style="color:#181082;text-align:center;">ESTIMACIÓN DEL INGRESO PROMEDIO DE LA POBLACIÓN ECONÓMICAMENTE ACTIVA OCUPADA EN YOPAL CASANARE</h1>
     """, unsafe_allow_html=True)
 
+    # Descripción de donde encontrar el código 
+    st.markdown("""
+    Completa el cuestionario para obtener un una proyección de tus ingreso. En la última sección, encontrarás un enlace al código del proyecto en GitHub.
+    """, unsafe_allow_html=True)
+
+
+
     # Interpretación de resultados
     st.markdown("""
     <h2 style="color:#181082;text-align:center;">Interpretación de Resultados</h2>
@@ -69,14 +76,15 @@ def main():
     st.markdown("""Donde:""")
 
     st.latex(r'''
-    \hat{YLn}= 14.106158-0.125724*Q+ 0.2490846*F -0.5176395*X_1 -0.3715330*X_2-  0.1556549*G+0.0091678*W+0.0080724*Z
-    ''')
+    \hat{YLn}= 14.106158-0.125724*Q+ 0.2490846*F -0.5176395*X_1 - \\
+            0.3715330*X_2 -  0.1556549*G + 0.0091678*W + 0.0080724*Z
+             
+            ''')
     st.markdown("""Así mismo:""")
     
     st.latex(r'''
-    \hat{YLn}= 14.1061586-0.1257248*Q- 0.5176395*X_1-0.3715330*X_2+0.2490846*F+ 
-             
-            0.1556549*G+ 0.0091678*W+0.0080724*Z 
+    \hat{YLn}= 14.1061586 - 0.1257248*Q- 0.5176395*X_1 - 0.3715330*X_2+ \\
+            0.2490846*F + 0.1556549*G + 0.0091678*W + 0.0080724*Z 
     
              ''')
 
@@ -152,5 +160,11 @@ def main():
     """, unsafe_allow_html=True)
 
 
+    # Nota sobre el valor de la estimación 
+    st.markdown("""
+    *Nota: Los datos del estudio son estaticos y fueron recolectados en el año 2021, por lo tanto, la fidelidad de la estimación a medida que pasa el tiempo se hace menos exacta.*
+    """, unsafe_allow_html=True)
+
+    
 if __name__ == '__main__':
     main()
