@@ -107,8 +107,8 @@ def main():
     """, unsafe_allow_html=True)
 
     # Lectura de datos
-    canal_buscado = st.radio("1.¿Consiguió su trabajo actual con recomendación?:", options=["Con recomendación", "Sin recomendación"])
-    f = st.radio("2.¿Estudió fuera del departamento?:", options=["No", "Sí"])
+    canal_buscado = st.radio("1.¿Consiguió su trabajo actual con recomendación?:", options=["Sin recomendación", "Con recomendación"])
+    f = st.radio("2.¿Estudió fuera del departamento?:", options=["Sí", "No"])
     
     # Selección del nivel educativo
     nivel_educativo = st.selectbox("3.Nivel de escolaridad:", options=["Bachiller", "Técnico", "Profesional"])

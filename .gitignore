@@ -163,3 +163,4 @@ cython_debug/
 #.idea/
 
 ven_ingresos
+venv_pea
